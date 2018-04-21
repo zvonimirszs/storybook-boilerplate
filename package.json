@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "@storybook/react": "^3.4.2",
-    "babel-core": "^6.26.0"
+    "babel-core": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook"
