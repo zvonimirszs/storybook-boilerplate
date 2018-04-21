@@ -1,0 +1,27 @@
+{
+  "name": "storybook-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.4.2",
+    "babel-core": "^6.26.0"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidAbram/storybook-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidAbram/storybook-project/issues"
+  },
+  "homepage": "https://github.com/DavidAbram/storybook-project#readme"
+}
