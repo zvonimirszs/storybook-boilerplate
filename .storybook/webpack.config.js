@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
+      loaders: ['babel-loader'],
       include: path.join(__dirname, '.')
     },
     {
