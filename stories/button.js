@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 /* eslint-enable */
-import Button from '../components/button';
+import { Button } from '../dist/index';
 
 const buttonStory = storiesOf('Button', module);
 
