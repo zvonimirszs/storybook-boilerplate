@@ -11,7 +11,6 @@ buttonStory.add('with text', () => (
   <Button text='Press me!'></Button>
 ));
 
-
 buttonStory.add('disabled', () => (
   <Button text="Can't Press me!" disabled={true}></Button>
 ));
