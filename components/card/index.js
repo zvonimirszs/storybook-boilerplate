@@ -6,10 +6,21 @@ export default class Card extends React.Component {
   render() {
     return (
       <div className={styles.card} >
-        <img src={this.props.imgUrl} style={{ maxWidth: '200px' }} />
+        <div className={styles.cardHeader} >
+          <div className={styles.iconHeader} >
+            <img src={this.props.iconFavorites} className={styles.productIcon}  />
+          </div>
+          <div className={styles.imageHeader} >
+            <img src={this.props.imgUrl} className={styles.productImg} />
+          </div>
+          <div className={styles.iconHeader} >
+            <img src={this.props.iconCart} className={styles.productIcon} />v
+            <img src={this.props.iconDetails} className={styles.productIcon} />v
+          </div>
+        </div>
         <div>
-          <h4> {this.props.name}</h4>
-          <p> {this.props.tagline}</p>
+          <h4 className={styles.title}> {this.props.name}</h4>
+          <p className={styles.text}> {this.props.description}</p>
         </div>
       </div>
     );
@@ -20,5 +31,9 @@ Card.PropTypes = {
   imgUrl: PropTypes.string,
   name: PropTypes.string,
   tagline: PropTypes.string,
+  description: PropTypes.string,
   key: PropTypes.string,
+  iconFavorites: PropTypes.string,
+  iconDetails: PropTypes.string,
+  iconCart: PropTypes.string,
 };

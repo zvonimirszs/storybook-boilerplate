@@ -12,7 +12,7 @@ buttonStory.add('with text', () => (
 ));
 
 buttonStory.add('disabled', () => (
-  <Button text="Can't Press me!" disabled={true}></Button>
+  <Button text="Can't Press me!" disabled ></Button>
 ));
 
 buttonStory.add('with on click handler', () => (

@@ -9,11 +9,17 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  text-align: center;
 }
 
 .button:disabled {
   background-color: #7a7a7a !important;
   cursor: not-allowed;
+  box-shadow: 0 9px #3f3f3f;
+}
+
+.button.inactive {
+  background-color: red !important;
   box-shadow: 0 9px #3f3f3f;
 }
 
