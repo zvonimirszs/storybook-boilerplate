@@ -7,6 +7,7 @@ function loadStories() {
   require('../stories/header');
   require('../stories/main-content');
   require('../stories/navigation-menu');
+  require('../stories/roundicon-button');
 }
 
 configure(loadStories, module);
