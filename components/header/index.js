@@ -6,6 +6,9 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className={styles.main} >
+        <div className={styles.headerText} >
+          {this.props.text}
+        </div>
         <div className={styles.headerLogo} >
           <img src={this.props.imgUrl} className={styles.logo} />
         </div>
@@ -18,4 +21,5 @@ export default class Header extends React.Component {
 Header.PropTypes = {
   imgUrl: PropTypes.string,
   imgClass: PropTypes.string,
+  text: PropTypes.string,
 };

@@ -11,5 +11,6 @@ headerStory.add('simple', () => (
   <Header
      imgUrl="https://seeklogo.com/images/D/duff-beer-logo-3AA4218F1D-seeklogo.com.png"
      class=""
+     text="Beer shop"
   ></Header>
 ));

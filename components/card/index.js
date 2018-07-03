@@ -5,17 +5,19 @@ import styles from './index.css';
 export default class Card extends React.Component {
   render() {
     return (
-      <div className={styles.card} >
+      <div name='divMain' id={this.props.id} className={styles.card} >
         <div className={styles.cardHeader} >
           <div className={styles.iconHeader} >
-            <img src={this.props.iconFavorites} className={styles.productIcon} />
+            <img id={this.props.id} src={this.props.iconFavorites} className={styles.productIcon} onClick={this.props.onClickFavorites} />
           </div>
-          <div className={styles.imageHeader} >
-            <img src={this.props.imgUrl} className={styles.productImg} />
+          <div className={styles.imageHeader}>
+            <img id={this.props.id} src={this.props.imgUrl} className={styles.productImg} />
           </div>
           <div className={styles.iconHeader} >
-            <img src={this.props.iconCart} className={styles.productIcon} />
-            <img src={this.props.iconDetails} className={styles.productIcon} />
+            <img id={this.props.id} src={this.props.iconCart} className={styles.productIcon} onClick={this.props.onClickCart}/>
+          </div>
+          <div className={styles.iconHeader} >
+            <img id={this.props.id} src={this.props.iconDetails} className={styles.productIcon} onClick={this.props.onClickDetails}/>
           </div>
         </div>
         <div className={styles.divText}>
@@ -32,8 +34,11 @@ Card.PropTypes = {
   name: PropTypes.string,
   tagline: PropTypes.string,
   description: PropTypes.string,
-  key: PropTypes.string,
+  id: PropTypes.integer,
   iconFavorites: PropTypes.string,
   iconDetails: PropTypes.string,
   iconCart: PropTypes.string,
+  onClickFavorites: PropTypes.func,
+  onClickDetails: PropTypes.func,
+  onClickCart: PropTypes.func,
 };
