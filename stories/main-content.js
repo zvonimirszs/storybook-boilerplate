@@ -47,6 +47,32 @@ const links = [
   },
 ];
 
+const menu = [
+  {
+    id: 1,
+    name: 'google33',
+    content: 'Google',
+    href: 'google.com',
+    number: 0,
+    active: true,
+  },
+  {
+    id: 2,
+    name: 'moogle33',
+    content: 'Moogle',
+    href: 'google.com',
+    
+  },
+  {
+    id: 3,
+    name: 'home33',
+    content: 'Home',
+    active: false,
+    href: 'google.com',
+    
+  },
+];
+
 maincontentStory.add('simple', () => (
   <Menu links={links} />
 ));
@@ -69,19 +95,20 @@ maincontentStory.add('simple2', () => {
     onClickDetails={renderStarRating}
     onClickCart={renderStarRating}
   ></Card>);
+  const menulinks = menu;
   return (
     <div className={styles.main}>
       <Header
         imgUrl="https://seeklogo.com/images/D/duff-beer-logo-3AA4218F1D-seeklogo.com.png"
         class=""
-      ></Header>
+      ></Header> <Menu links={menulinks} />
       <Navigation links={links} />
       <div className={styles.body}>
         <div className={styles.content}>
           <Main>{cards}</Main>
         </div>
         <div className={styles.menu}>
-          <Menu links={links} />
+          <Menu links={menu} />
           <Footer>
       <ImageText
         imgUrl="http://icons.iconarchive.com/icons/iconsmind/outline/32/URL-Window-icon.png"

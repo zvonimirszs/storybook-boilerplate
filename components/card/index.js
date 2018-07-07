@@ -14,10 +14,10 @@ export default class Card extends React.Component {
             <img id={this.props.id} src={this.props.imgUrl} className={styles.productImg} />
           </div>
           <div className={styles.iconHeader} >
-            <img id={this.props.id} src={this.props.iconCart} className={styles.productIcon} onClick={this.props.onClickCart}/>
+            <img id={this.props.id} src={this.props.iconCart} className={styles.productIcon} onClick={this.props.onClickCart} />
           </div>
           <div className={styles.iconHeader} >
-            <img id={this.props.id} src={this.props.iconDetails} className={styles.productIcon} onClick={this.props.onClickDetails}/>
+            <img id={this.props.id} src={this.props.iconDetails} className={styles.productIcon} onClick={this.props.onClickDetails} />
           </div>
         </div>
         <div className={styles.divText}>

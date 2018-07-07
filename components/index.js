@@ -6,3 +6,4 @@ export Footer from './footer';
 export Menu from './menu';
 export Main from './main';
 export Navigation from './navigation';
+export Popup from './popup';
