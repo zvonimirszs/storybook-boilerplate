@@ -7,3 +7,4 @@ export Menu from './menu';
 export Main from './main';
 export Navigation from './navigation';
 export Popup from './popup';
+export Table from './table';

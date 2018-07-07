@@ -9,6 +9,7 @@ function loadStories() {
   require('../stories/navigation-menu');
   require('../stories/roundicon-button');
   require('../stories/popup');
+  require('../stories/table.js');
 }
 
 configure(loadStories, module);
